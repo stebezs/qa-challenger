@@ -4,15 +4,22 @@
   "description": "QA Test for getlabor.com.br homepage (Novatics Interview Project)",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start": "xdg-open https://getlabor.com.br/"
+    "test": "wdio",
+    "e2e": "cypress open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^25.2.7"
+    "chai": "^4.1.2",
+    "cypress": "^4.3.0",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-mocha-framework": "^0.6.1",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.4",
+    "webdriverio": "^4.13.0"
   },
   "dependencies": {
-    "jest": "^25.2.7"
+    "http-server": "^0.12.1",
+    "selenium-standalone": "^6.15.1"
   }
 }
