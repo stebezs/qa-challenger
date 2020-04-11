@@ -18,3 +18,22 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+import "cypress-localstorage-commands";
+
+Cypress.Commands.add('loginAs', (UserEmail) => {
+  cy.request({
+    method: 'POST',
+    url: "https://app.getlabor.com.br/cadastrar",
+    body: {
+      user: {
+        email:'ui@email.com',
+      }
+    }
+  })
+    .its('body')
+    .then((body) => {
+      cy.setLocalStorage("accessToken", body.accessToken);
+      cy.setLocalStorage("refreshToken", body.refreshToken);
+    });
+});
