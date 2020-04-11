@@ -1,10 +1,12 @@
-context('Cadastrar', () => {
+context('Sign up message', () => {
 
     context('verify if show a message when subimit without data', () => {
 
-    it('click on the button Cadastrar', () => {
-      cy.clearLocalStorage()
+      beforeEach(() => {
+        cy.clearLocalStorage()
+      })
 
+    it('click on the button Cadastrar', () => {
       cy.visit('https://app.getlabor.com.br/cadastrar')
       cy.get('[name="name"]').type('teste')
       cy.get('[name="segment"]').select('Audiovisual')

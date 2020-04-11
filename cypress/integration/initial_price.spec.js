@@ -1,6 +1,6 @@
 const urls = ['https://getlabor.com.br/']
 
-describe('Teste o Labor por 30 dias gratuitamente!', () => {
+describe('Show inicial price', () => {
 
   beforeEach(() => {
     cy.visit('https://getlabor.com.br/')
@@ -9,5 +9,5 @@ describe('Teste o Labor por 30 dias gratuitamente!', () => {
   it('contains "Comece gratuitamente "', () => {
     cy.get('[href="https://app.getlabor.com.br/cadastrar"]').contains("Comece Gratuitamente")
   })
-  
+
 })

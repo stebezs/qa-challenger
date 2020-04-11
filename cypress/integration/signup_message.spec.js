@@ -1,4 +1,4 @@
-context('Cadastrar', () => {
+context('Sign up message', () => {
 
     context('verify if show a message when subimit without data', () => {
       // beforeEach(() => {
