@@ -4,12 +4,14 @@
   "description": "QA Test for getlabor.com.br homepage (Novatics Interview Project)",
   "main": "index.js",
   "scripts": {
-    "test": "wdio"
+    "test": "wdio",
+    "e2e": "cypress open"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.1.2",
+    "cypress": "^4.3.0",
     "wdio-dot-reporter": "0.0.9",
     "wdio-mocha-framework": "^0.6.1",
     "wdio-selenium-standalone-service": "0.0.10",
