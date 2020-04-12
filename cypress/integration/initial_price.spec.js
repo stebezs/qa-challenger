@@ -1,3 +1,8 @@
+// How to clear your local database
+    // beforeEach(() => {
+    //   cy.clearLocalStorage()
+    // })
+
 const urls = ['https://getlabor.com.br/']
 
 describe('Show inicial price', () => {

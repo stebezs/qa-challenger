@@ -1,3 +1,8 @@
+// How to clear your local database
+    // beforeEach(() => {
+    //   cy.clearLocalStorage()
+    // })
+
 context('Sign up message', () => {
 
     context('verify if show a message when subimit without data', () => {

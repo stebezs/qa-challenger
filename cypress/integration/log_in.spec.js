@@ -1,3 +1,8 @@
+// How to clear your local database
+    // beforeEach(() => {
+    //   cy.clearLocalStorage()
+    // })
+
 context('Login', () => {
 
     context('verify if go on login page', () => {

@@ -1,6 +1,11 @@
 
 context('Sign up with a email already registered', () => {
 
+  // How to clear your local database
+    // beforeEach(() => {
+    //   cy.clearLocalStorage()
+    // })
+
     context('verify if show a message when subimit without data', () => {
 
     it('click on the button Cadastrar', () => {

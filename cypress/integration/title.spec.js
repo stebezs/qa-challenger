@@ -1,3 +1,9 @@
+// How to clear your local database
+    // beforeEach(() => {
+    //   cy.clearLocalStorage()
+    // })
+
+
 /// <reference types="cypress" />
 
 describe('Check the title', () => {
@@ -8,5 +14,5 @@ describe('Check the title', () => {
   it('contains "Labor - Controle de Horas"', () => {
     cy.title().should('contain', 'Labor - Controle de Horas')
   })
-  
+
 })
